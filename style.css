@@ -1,0 +1,120 @@
+/* Genel Sıfırlamalar ve Temel Ayarlar */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Başlık ve Navigasyon */
+.main-header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex; /* Masaüstü: Yan yana menü */
+}
+
+.nav-list li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+.nav-list li a:hover {
+    background-color: #555;
+}
+
+/* Hamburger Menü (Varsayılan olarak gizli) */
+.hamburger-menu {
+    display: none; 
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Ana İçerik */
+#content-area {
+    flex-grow: 1; /* İçeriğin kalan boşluğu doldurmasını sağlar */
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Footer */
+.main-footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto; /* Sayfanın altına yapışmasını sağlar */
+}
+
+/* --- Duyarlı Tasarım (Responsive Design) --- */
+
+/* Mobil Ekranlar İçin (Örn: max-width: 768px) */
+@media (max-width: 768px) {
+    
+    /* Hamburger Menüyü Göster */
+    .hamburger-menu {
+        display: block; 
+    }
+
+    /* Navigasyon Listesini Gizle ve Dikey Yap */
+    .nav-list {
+        display: none; /* Varsayılan olarak gizli */
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px; /* Header'ın hemen altından başla */
+        left: 0;
+        background: #444;
+        text-align: center;
+        z-index: 1000;
+    }
+
+    /* 'is-open' sınıfı JS ile menü açıldığında eklenecek */
+    .nav-list.is-open {
+        display: flex; 
+    }
+
+    .nav-list li {
+        border-bottom: 1px solid #555;
+    }
+
+    .nav-list li:last-child {
+        border-bottom: none;
+    }
+
+    /* Header'ı biraz düzenleyelim */
+    .main-header {
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+}

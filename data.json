@@ -1,0 +1,30 @@
+{
+    "pages": {
+        "hakkimda": {
+            "title": "👋 Hakkımda",
+            "content": "<p>Merhaba, ben [Adınız Soyadınız]. Modern web teknolojilerine meraklı, geliştirmeyi seven biriyim...</p> <p>Bu portfolyo sitesini bir SPA olarak HTML, CSS ve saf JavaScript kullanarak geliştirdim.</p>"
+        },
+        "projelerim": {
+            "title": "🛠️ Projelerim",
+            "content": "<h2>Web Geliştirme Projeleri</h2><p>Burada, data.json dosyasından okunan ve dinamik olarak oluşturulan proje listesi yer alacaktır.</p>"
+        },
+        "iletisim": {
+            "title": "📧 İletişim",
+            "content": "<p>Benimle iletişime geçmek için lütfen aşağıdaki formu doldurun.</p>"
+        }
+    },
+    "projects": [
+        {
+            "id": 1,
+            "name": "E-Ticaret Sitesi Arayüzü",
+            "tech": "HTML5, CSS Grid, JavaScript",
+            "description": "Tamamen duyarlı ve modern bir alışveriş arayüzü tasarımı."
+        },
+        {
+            "id": 2,
+            "name": "Hava Durumu Uygulaması",
+            "tech": "JavaScript, Fetch API (OpenWeatherMap)",
+            "description": "Harici bir API'den veri çekerek dinamik hava durumu gösterimi."
+        }
+    ]
+}
