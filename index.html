@@ -3,30 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adınız - Portfolyo (SPA)</title>
+    <title>Yusuf İslam Kaya - Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="main-header">
-        <a href="#" class="logo">Adınız Soyadınız</a>
-        <nav class="main-nav">
-            <button class="hamburger-menu" aria-label="Menü Aç/Kapat">&#9776;</button>
-            <ul class="nav-list">
-                <li><a href="#hakkimda" data-page="hakkimda">Hakkımda</a></li>
-                <li><a href="#projelerim" data-page="projelerim">Projelerim</a></li>
-                <li><a href="#iletisim" data-page="iletisim">İletişim</a></li>
+    <!-- ÜST MENÜ BÖLÜMÜ -->
+    <header>
+        <nav>
+            <div class="logo">Yusuf İslam Kaya</div>
+            
+            <!-- HAMBURGER MENÜ BUTONU (Sadece mobilde görünür) -->
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <!-- MENÜ LİSTESİ -->
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#hakkimda" class="nav-link active">Hakkımda</a></li>
+                <li><a href="#projelerim" class="nav-link">Projelerim</a></li>
+                <li><a href="#iletisim" class="nav-link">İletişim</a></li>
             </ul>
         </nav>
     </header>
 
-    <main id="content-area">
-        </main>
+    <!-- ANA İÇERİK ALANI -->
+    <main id="content">
+        <p>Yükleniyor...</p>
+    </main>
 
-    <footer class="main-footer">
-        <p>&copy; 2025 Adınız Soyadınız. Tüm Hakları Saklıdır.</p>
+    <!-- ALT KISIM (FOOTER) -->
+    <footer>
+        <p>&copy; 2025 Yusuf İslam Kaya. Tüm hakları saklıdır.</p>
     </footer>
 
+    <!-- JAVASCRIPT DOSYASI -->
     <script src="script.js"></script>
+
 </body>
 </html>
