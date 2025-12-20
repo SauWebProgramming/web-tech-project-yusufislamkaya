@@ -1,31 +1,73 @@
 {
-    "pages": {
-        "hakkimda": {
-            "title": "👋 Hakkımda",
-            "content": "<p>Merhaba, ben [Adınız Soyadınız]. Modern web teknolojilerine meraklı, geliştirmeyi seven biriyim...</p> <p>Bu portfolyo sitesini bir SPA olarak HTML, CSS ve saf JavaScript kullanarak geliştirdim.</p>"
-        },
-        "projelerim": {
-            "title": "🛠️ Projelerim",
-            "content": "<h2>Web Geliştirme Projeleri</h2><p>Burada, data.json dosyasından okunan ve dinamik olarak oluşturulan proje listesi yer alacaktır.</p>"
-        },
-        "iletisim": {
-            "title": "📧 İletişim",
-            "content": "<p>Benimle iletişime geçmek için lütfen aşağıdaki formu doldurun.</p>"
-        }
+  "pages": {
+    "hakkimda": {
+      "title": "Hakkımda",
+      "description": "Ben kimim ve ne yapıyorum?"
     },
-    "projects": [
-        {
-            "id": 1,
-            "name": "E-Ticaret Sitesi Arayüzü",
-            "tech": "HTML5, CSS Grid, JavaScript",
-            "description": "Tamamen duyarlı ve modern bir alışveriş arayüzü tasarımı."
-        },
-        {
-            "id": 2,
-            "name": "Hava Durumu Uygulaması",
-            "tech": "JavaScript, Fetch API (OpenWeatherMap)",
-            "description": "Harici bir API'den veri çekerek dinamik hava durumu gösterimi."
-        }
-    ]
+    "projelerim": {
+      "title": "Projelerim",
+      "description": "Yaptığım web projeleri"
+    },
+    "iletisim": {
+      "title": "İletişim",
+      "description": "Benimle nasıl iletişime geçebilirsiniz"
+    }
+  },
+  "projects": [
+    {
+      "id": 1,
+      "name": "E-Ticaret Sitesi",
+      "tech": "HTML, CSS, JavaScript",
+      "description": "Basit bir alışveriş sitesi arayüzü. Ürünleri listeleyip sepete ekleme özellikleri var.",
+      "icon": "🛒"
+    },
+    {
+      "id": 2,
+      "name": "Hava Durumu Uygulaması",
+      "tech": "JavaScript, API",
+      "description": "Şehir adı yazarak hava durumunu gösteren basit bir uygulama.",
+      "icon": "🌤️"
+    },
+    {
+      "id": 3,
+      "name": "Yapılacaklar Listesi",
+      "tech": "HTML, CSS, JavaScript",
+      "description": "Görev ekleyip silebileceğiniz basit bir to-do list uygulaması.",
+      "icon": "✅"
+    },
+    {
+      "id": 4,
+      "name": "Portfolio Sitesi",
+      "tech": "HTML, CSS, JavaScript, JSON",
+      "description": "Kendimi tanıttığım bu portfolyo sitesi. JSON dosyasından veri çekiyor.",
+      "icon": "💼"
+    },
+    {
+      "id": 5,
+      "name": "Hesap Makinesi",
+      "tech": "HTML, CSS, JavaScript",
+      "description": "Temel matematik işlemleri yapabilen basit bir hesap makinesi.",
+      "icon": "🔢"
+    },
+    {
+      "id": 6,
+      "name": "Saat Uygulaması",
+      "tech": "JavaScript",
+      "description": "Anlık saat, tarih ve geri sayım özelliklerine sahip dijital saat.",
+      "icon": "⏰"
+    }
+  ],
+  "skills": [
+    "HTML5",
+    "CSS3",
+    "JavaScript",
+    "Git",
+    "GitHub",
+    "Responsive Design"
+  ],
+  "contact": {
+    "email": "yusuf@example.com",
+    "github": "https://github.com/yusufislamkaya",
+    "linkedin": "https://linkedin.com/in/yusufislamkaya"
+  }
 }
-
